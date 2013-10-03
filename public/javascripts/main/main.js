@@ -39,7 +39,7 @@ game.mainFunc = function() {
   // アプリケーション作成
   var gameApp = tm.app.CanvasApp("#world");
   var title = game.TitleScene();
-  
+
   gameApp.resize(game.SCREEN_WIDTH, game.SCREEN_HEIGHT); // リサイズ
   //gameApp.fitWindow(); // 自動フィット
   gameApp.background = "rgba(0, 0, 0, 1)";
@@ -50,11 +50,11 @@ game.mainFunc = function() {
    width: game.SCREEN_WIDTH,
    height: game.SCREEN_HEIGHT
   });
-  
+
   // シーンを切り替える
   //app.replaceScene(title);
   gameApp.replaceScene(loadingScene);
-  
+
   // 実行
   gameApp.run();
   game.mainCanvas = gameApp;

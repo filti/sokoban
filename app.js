@@ -10,6 +10,8 @@ var user = require('./app/routes/user');
 var http = require('http');
 var path = require('path');
 
+var chatServer = require('./app/lib/chat');
+
 var app = express();
 
 // all environments
@@ -35,6 +37,8 @@ app.get('/', routes.index);
 app.get('/api/stage/:stage', api.stage);
 app.get('/users', user.list);
 
-http.createServer(app).listen(app.get('port'), function(){
+var server = http.createServer(app).listen(app.get('port'), function(){
   console.log('Sokoban server listening on port ' + app.get('port'));
 });
+
+chatServer.listen(server);
