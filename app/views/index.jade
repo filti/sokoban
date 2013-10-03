@@ -1,9 +1,10 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  canvas#world
+  section.container
+    div#sokoban
+  
+block scripts
   script(src='javascripts/lib/tmlib.js')
   script(src='javascripts/scene/game/matrix.js')
   script(src='javascripts/scene/game/box.js')
@@ -11,3 +12,12 @@ block content
   script(src='javascripts/scene/game/player.js')
   script(src='javascripts/scene/game/gamescene.js')
   script(src='javascripts/main/main.js')
+  script(src='jst/jade.js')
+  script(src='javascripts/app.js')
+  script(src='javascripts/models/Message.js')
+  script(src='javascripts/collections/MessageList.js')
+  script(src='javascripts/views/AppView.js')
+  script(src='javascripts/views/GameView.js')
+  script(src='javascripts/views/RoomView.js')
+  script(src='javascripts/views/ChatView.js')
+  script(src='javascripts/routers/routers.js')

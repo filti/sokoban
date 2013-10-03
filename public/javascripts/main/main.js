@@ -14,21 +14,17 @@ tm.main(function() {
     // アプリケーション作成
     var app = tm.app.CanvasApp("#world");
     var game = GameScene();
-    
+
     app.resize(SCREEN_WIDTH, SCREEN_HEIGHT); // リサイズ
-    app.fitWindow();    // 自動フィット
+    //app.fitWindow();    // 自動フィット
     app.background = "rgba(0, 0, 0, 1)";
-    
+
     // シーンを切り替える
     app.replaceScene(game);
     app.currentScene.update = function() {
     	game.updateAll(app.keyboard);
     };
-    
+
     // 実行
     app.run();
 });
-
-
-
-

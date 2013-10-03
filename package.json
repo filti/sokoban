@@ -9,7 +9,8 @@
     "express": "3.4.0",
     "jade": "*",
     "stylus": "*",
-    "node-static": "*"
+    "node-static": "*",
+    "socket.io": "~0.9.16"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
@@ -17,6 +18,8 @@
     "expect": "0.0.2",
     "mocha": "~1.13.0",
     "grunt-contrib-jshint": "~0.6.4",
-    "grunt-mocha-test": "~0.6.3"
+    "grunt-mocha-test": "~0.6.3",
+    "grunt-contrib-jade": "~0.8.0",
+    "grunt-contrib-copy": "~0.4.1"
   }
 }

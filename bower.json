@@ -21,20 +21,35 @@
     "backbone": "~1.0.0",
     "jquery": "~2.0.3",
     "underscore": "~1.5.2",
-    "tmlib.js": "~0.1.8"
+    "tmlib.js": "~0.1.8",
+    "jade": "~0.35.0",
+    "sidr": "~1.1.1",
+    "bootstrap": "~3.0.0"
   },
   "exportsOverride": {
     "backbone": {
       "js": "backbone*.js"
     },
     "jquery": {
-      "js": "jquery*js"
+      "js": "jquery*.js"
     },
     "underscore": {
       "js": "underscore*.js"
     },
     "tmlib.js": {
-      "js": "build/*js"
+      "js": "build/*.js"
+    },
+    "jade": {
+      "js": "runtime.js"
+    },
+    "sidr": {
+      "js": "*.js",
+      "css": "stylesheets/**/*.css"
+    },
+    "bootstrap": {
+      "js": "dist/js/*.js",
+      "css": "dist/css/*.css",
+      "fonts": "dist/fonts/*.*"
     }
   }
 }

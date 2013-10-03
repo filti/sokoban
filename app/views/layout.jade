@@ -3,6 +3,33 @@ html
   head
     meta(name='viewport',content='width=device-width,user-scalable=no')
     title= title
+    link(rel='stylesheet', href='lib/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='lib/sidr/css/jquery.sidr.dark.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    block header
+      header(class=['navbar', 'navbar-inverse', 'navbar-fixed-top'])
+        div.contanier
+          div.navbar-header
+            button#menu(type='button' class=['navbar-toggle'])
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand Socoban
+          div#navbar(class=['collapse', 'navbar-collapse'])
+            ul(class=['nav', 'navbar-nav'])
+              li
+                a#game(href='/') Game
+              li
+                a#chat(href='/chat/') Chat
+              li
+                a#ranking(href='/ranking/') Ranking
     block content
+    script(src='lib/jquery/js/jquery.js')
+    script(src='lib/underscore/js/underscore.js')
+    script(src='lib/backbone/js/backbone.js')
+    script(src='lib/jade/js/runtime.js')
+    script(src='lib/bootstrap/js/bootstrap.min.js')
+    script(src='lib/sidr/js/jquery.sidr.min.js')
+    block scripts
